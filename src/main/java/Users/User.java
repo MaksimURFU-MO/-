@@ -2,7 +2,7 @@ package Users;
 
 import java.time.LocalDateTime;
 
-public class User {
+public class User implements Comparable<User> {
     private LocalDateTime time;
     private String nameCompany;
     private int weight;
@@ -31,6 +31,11 @@ public class User {
     }
     public void setWeight(int weight) {
         this.weight = weight;
+    }
+
+    @Override
+    public int compareTo(User other){
+        return this.time.compareTo(other.time);
     }
 }
 
