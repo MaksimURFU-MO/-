@@ -1,3 +1,5 @@
+package Adapters;
+
 import java.nio.file.Path;
 
 public class ChoiceAdapter {
